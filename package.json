@@ -1,0 +1,29 @@
+{
+  "name": "dms",
+  "version": "1.0.0",
+  "description": "a document management system",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine-node documentManagerSpec.js --forceexit --verbose",
+    "start": "nodemon documentManager.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-eashikodi/DMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-eashikodi/DMS/issues"
+  },
+  "homepage": "https://github.com/andela-eashikodi/DMS#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "pg": "^4.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.8.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
