@@ -2,6 +2,7 @@ var Sequelize = require('sequelize');
 var sequelize = new Sequelize('postgres://andela:ashikodi@localhost:5432/test');
 var db = {};
 
+//script to dynamically create tables
 var models = require('./schema')(Sequelize, sequelize);
 models.forEach(function(table) {
   db[table.name] = table;
