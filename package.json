@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jasmine-node documentManagerSpec.js --forceexit --verbose",
-    "start": "nodemon documentManager.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
