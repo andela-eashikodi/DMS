@@ -1,6 +1,7 @@
 var models = require('./database');
 var dmsService = require('./documentManager');
 
+//spec for functions to be created
 describe("documentManager", function() {
 
   describe('User', function() {
@@ -133,9 +134,9 @@ describe("documentManager", function() {
     });
 
     it('should validate that getAllDocumentsByDate returns all documents, limited by a specified number, that were published on a certain date', function(done) {
+
       var today = new Date().toJSON().slice(0, 10);
       dmsService.getAllDocumentsByDate(today, 2).then(function(data) {
-        console.log(data[0]);
         expect(data[1].rowCount).toBe(2);
         expect(data[0][0].date_created).toMatch(jasmine.objectContaining(today));
         expect(data[0][1].date_created).toMatch(jasmine.objectContaining(today));

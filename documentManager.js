@@ -2,6 +2,7 @@ var models = require('./database');
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize('postgres://andela:ashikodi@localhost:5432/test');
 
+//functions to query database
 module.exports = {
 
   createUser:  function(first, last) {

@@ -1,3 +1,4 @@
+// schema for database
 module.exports = function(Datatypes, sequelize) {
   var User = sequelize.define( 'user', {
     id: {
